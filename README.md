@@ -1,15 +1,17 @@
-# wp_theme_dev
+# Wordpress Theme Dev
 
-To install dependencies:
+## Install docker
 
-```bash
-bun install
-```
+[Docker Official](https://www.docker.com/products/docker-desktop/)
 
-To run:
+## Run docker-compose
 
 ```bash
-bun run src/index.tsx
+docker-compose up -d
 ```
 
-This project was created using `bun init` in bun v1.1.42. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## To install underscores(_s)
+
+```bash
+git clone https://github.com/Automattic/_s.git wp-content/themes/_s
+```
