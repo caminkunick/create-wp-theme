@@ -5,10 +5,10 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./public:/var/www/html
-      - ./install.sh:/root/install.sh
+      - ./themes:/var/www/html/wp-content/themes
     networks:
       - mynet
+    command: git clone https://github.com/Automattic/_s.git wp-content/themes/_s
 
   db:
     image: mariadb
